@@ -3,6 +3,7 @@ data/
 data.zip
 archive/
 test.jpg
+models/
 
 MANIFEST
 build
