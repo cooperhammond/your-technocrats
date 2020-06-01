@@ -1,9 +1,12 @@
-urls/
+# local big data
 data/
 data.zip
 archive/
 test.jpg
 models/
+
+# export
+app/export.pkl
 
 MANIFEST
 build
