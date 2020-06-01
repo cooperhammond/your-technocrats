@@ -9,8 +9,8 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://github.com/cooperhammond/your-technocrats/releases/download/1.0/technocrats-resnet50-v1.pth'
-export_file_name = 'export.pkl  '
+export_file_url = 'https://github.com/cooperhammond/your-technocrats/releases/download/1.0/technocrats-resnet50-v1.pkl'
+export_file_name = 'technocrats-resnet50-v1.pkl'
 
 classes = [
     'bill-gates', 

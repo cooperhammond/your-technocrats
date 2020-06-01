@@ -6,7 +6,7 @@ test.jpg
 models/
 
 # export
-app/export.pkl
+*.pkl
 
 MANIFEST
 build
