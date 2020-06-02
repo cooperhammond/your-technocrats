@@ -62,6 +62,16 @@ async def homepage(request):
     html_file = path / 'view' / 'index.html'
     return HTMLResponse(html_file.open().read())
 
+@app.route('/story')
+async def homepage(request):
+    html_file = path / 'view' / 'story.html'
+    return HTMLResponse(html_file.open().read())
+
+@app.route('/bios')
+async def homepage(request):
+    html_file = path / 'view' / 'bios.html'
+    return HTMLResponse(html_file.open().read())
+
 
 @app.route('/analyze', methods=['POST'])
 async def analyze(request):

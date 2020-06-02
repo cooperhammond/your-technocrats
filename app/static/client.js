@@ -1,7 +1,6 @@
-AOS.init({ duration: 1200 });
-
-
-var el = x => document.getElementById(x);
+function el(x) {
+  return document.getElementById(x);
+}
 
 function showPicker() {
   el("file-input").click();
@@ -19,9 +18,12 @@ function showPicked(input) {
 
 function analyze() {
   var uploadFiles = el("file-input").files;
-  if (uploadFiles.length !== 1) alert("Please select a file to analyze!");
+  if (uploadFiles.length !== 1) {
+    alert("Please select a file to analyze!");
+    return;
+  }
 
-  el("analyze-button").innerHTML = "Analyzing...";
+  el("analyze-button").innerHTML = "ANALYZING...";
   var xhr = new XMLHttpRequest();
   var loc = window.location;
   xhr.open("POST", `${loc.protocol}//${loc.hostname}:${loc.port}/analyze`,
@@ -33,8 +35,9 @@ function analyze() {
     if (this.readyState === 4) {
       var response = JSON.parse(e.target.responseText);
       el("result-label").innerHTML = `Result = ${response["result"]}`;
+      window.location.href = `/bios#${response["result"]}`
     }
-    el("analyze-button").innerHTML = "Analyze";
+    el("analyze-button").innerHTML = "ANALYZE";
   };
 
   var fileData = new FormData();
