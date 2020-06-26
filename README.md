@@ -25,4 +25,4 @@ An incredibly simple application of deep learning in an overly complicated mediu
 
 The model was trained off of roughly 900 images total gathered through google images and sanitized by hand. See the jupyter notebook [technocrats.ipynb](https://github.com/cooperhammond/your-technocrats/blob/master/technocrats.ipynb) for more info.
 
-See the [website](https://technocrats.onrender.com/) to try it out.
+See the [website](https://technocrats.onrender.com/) to try it out or `git clone` it and run `python app/server.py serve` to get a local version running.
