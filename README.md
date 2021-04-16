@@ -13,7 +13,7 @@
 
 ---
 
-An incredibly simple application of deep learning in an overly complicated medium. At its base, this program will recognize the following famous technocrats with 97.5% accuracy.
+An incredibly simple application of deep learning in an overly complicated medium. At its base, this program will recognize the following famous technocrats. While the accuracy is 97.5%, it is an overtrained model, guessing Elon Musk more often than not.
 
 1. Bill Gates
 1. Elon Musk
